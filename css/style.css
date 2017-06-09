@@ -1,0 +1,79 @@
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+#page {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f6f6f6; }
+
+.container {
+  margin: auto; }
+
+#content {
+  background-color: white;
+  margin: 30px auto;
+  flex: 1 0 auto; }
+  #content .wrap {
+    flex: 1 0 auto;
+    padding: 30px 0; }
+
+ul, li, nav {
+  padding: 0;
+  margin: 0; }
+
+header {
+  height: 95px;
+  background-color: white;
+  float: left;
+  border-bottom: 5px solid #1DABB8; }
+  header .logo {
+    display: inline-block; }
+    header .logo .site-title {
+      font-size: 26px;
+      text-transform: uppercase; }
+      header .logo .site-title div {
+        font-size: 20px;
+        font-weight: 300; }
+  header nav {
+    float: right; }
+    header nav ul {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600; }
+      header nav ul li {
+        float: left;
+        height: 100px;
+        box-sizing: border-box; }
+        header nav ul li .nav-link {
+          padding: 42px 10px 42px;
+          display: block; }
+        header nav ul li:hover {
+          background-color: #f6f6f6;
+          border-bottom: 5px solid #272727; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    color: #1DABB8; }
+
+footer {
+  background-color: #272727;
+  color: white;
+  padding: 30px 0;
+  text-align: center; }
+  footer p {
+    margin: 0; }
+  footer .container {
+    font-size: smaller; }
+
+/*# sourceMappingURL=style.css.map */

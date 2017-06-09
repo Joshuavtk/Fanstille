@@ -1,0 +1,91 @@
+//Variables
+$hoverColor: #1DABB8
+$footerColor: #272727
+$lightGrey: #f6f6f6
+//Fonts
+$specialFont: "bastillefontmedium", sans-serif
+$font: "Lato", sans-serif
+//Sizes
+$fullWidth: "1200px"
+$compWidth: "992px"
+$tabletWidth: "768px"
+//Imports
+@import "grid"
+
+@mixin border-radius($straal)
+  -webkit-border-radius: $straal
+  -moz-border-radius: $straal
+  -ms-border-radius: $straal
+  -o-border-radius: $straal
+  border-radius: $straal
+
+//Style
+#page
+  font-family: $font
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  background-color: $lightGrey
+
+.container
+  margin: auto
+
+#content
+  background-color: white
+  margin: 30px auto
+  flex: 1 0 auto
+  .wrap
+    flex: 1 0 auto
+    padding: 30px 0
+
+
+ul, li, nav
+  padding: 0
+  margin: 0
+
+header
+  height: 95px
+  background-color: white
+  float: left
+  border-bottom: 5px solid $hoverColor
+  .logo
+    display: inline-block
+    .site-title
+      font-size: 26px
+      text-transform: uppercase
+      div
+        font-size: 20px
+        font-weight: 300
+  nav
+    float: right
+    ul
+      text-transform: uppercase
+      font-size: 14px
+      font-weight: 600
+      li
+        float: left
+        height: 100px
+        box-sizing: border-box
+        .nav-link
+          padding: 42px 10px 42px
+          display: block
+        &:hover
+          background-color: $lightGrey
+          border-bottom: 5px solid $footerColor
+
+
+a
+  text-decoration: none
+  color: black
+  &:hover
+    color: $hoverColor
+
+footer
+  background-color: $footerColor
+  color: white
+  padding: 30px 0
+  text-align: center
+  p
+    margin: 0
+  .container
+    font-size: smaller
